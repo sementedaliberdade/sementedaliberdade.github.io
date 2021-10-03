@@ -1,0 +1,1494 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Semente da Liberdade</title>
+        <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>        
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="/css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="https://sementedaliberdade.vercel.app/">Semente da Liberdade</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#signup">Contatos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>        
+        <!-- About-->
+        <section class="about-section text-center" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-white mb-4">Projeto Analytics</h2>
+                        <p class="text-white-50">
+                            Através do Instagram, rede social com 99 milhões de usuários ativos no Brasil - segundo a Statista, analisamos o crescimento de perfis pró-liberdade e correlatos.
+                        </p>
+                    </div>
+                </div>                                                                
+            </div>
+        </section>
+        <!-- Projects-->
+        <section class="projects-section bg-light" id="projects">
+            <div class="container px-4 px-lg-5">
+                <!-- Featured Project Row-->
+                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">                    
+                    <div id="chartdiv" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>
+                    <!-- amCharts javascript sources -->
+		                <script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+		                <script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
+		
+
+                        <!-- amCharts javascript code -->
+                        <script type="text/javascript">
+                            AmCharts.makeChart("chartdiv",
+                                {
+                                    "type": "serial",
+                                    "categoryField": "category",
+                                    "startDuration": 1,
+                                    "theme": "default",
+                                    "categoryAxis": {
+                                        "gridPosition": "start"
+                                    },
+                                    "trendLines": [],
+                                    "graphs": [
+                                        {
+                                            "accessibleLabel": "Bruno Perini",                                            
+                                            "bullet": "round",
+                                            "id": "AmGraph-1",
+                                            "title": "Bruno Perini",
+                                            "type": "smoothedLine",
+                                            "valueField": "Bruno Perini"
+                                        },
+                                        {
+                                            "id": "AmGraph-2",
+                                            "bullet": "round",
+                                            "title": "Ricardo Amorim",
+                                            "type": "smoothedLine",
+                                            "valueField": "Ricardo Amorim"
+                                        },
+                                        {
+                                            "accessibleLabel": "Renata Barreto",                                            
+                                            "bullet": "round",
+                                            "id": "AmGraph-3",
+                                            "title": "Renata Barreto",
+                                            "type": "smoothedLine",
+                                            "valueField": "Renata Barreto"
+                                        },
+                                        {
+                                            "id": "AmGraph-4",
+                                            "bullet": "round",
+                                            "title": "Mariana Brito",
+                                            "type": "smoothedLine",
+                                            "valueField": "Mariana Brito"
+                                        },
+                                        {
+                                            "id": "AmGraph-5",
+                                            "bullet": "round",
+                                            "title": "Bruno Garschagen",
+                                            "type": "smoothedLine",
+                                            "valueField": "Bruno Garschagen"
+                                        },
+                                        {
+                                            "id": "AmGraph-6",
+                                            "bullet": "round",
+                                            "title": "Fernando Ulrich",
+                                            "type": "smoothedLine",
+                                            "valueField": "Fernando Ulrich"
+                                        }
+                                    ],
+                                    "guides": [],
+                                    "valueAxes": [
+                                        {
+                                            "id": "ValueAxis-1",
+                                            "title": "Seguidores"
+                                        }
+                                    ],
+                                    "allLabels": [],
+                                    "balloon": {},
+                                    "legend": {
+                                        "enabled": true,
+                                        "accessibleLabel": "Seguidores",
+                                        "rollOverGraphAlpha": 0,
+                                        "useGraphSettings": true
+                                    },
+                                    "titles": [
+                                        {
+                                            "id": "Title-1",
+                                            "size": 15,
+                                            "text": "Influencers"
+                                        }
+                                    ],
+                                    "dataProvider": [
+                                        {
+                                            "Bruno Garschagen": "105460",
+                                            "Bruno Perini": "667872",
+                                            "Ricardo Amorim":"750438",
+                                            "Renata Barreto": "327863",
+                                            "Mariana Brito": "248336",
+                                            "Fernando Ulrich": "82831",
+                                            "category": "Dez - 20"
+                                        },
+                                        {
+                                            "Bruno Garschagen": "105889",
+                                            "Bruno Perini": "685840",
+                                            "Ricardo Amorim":"771680",
+                                            "Renata Barreto": "334545",
+                                            "Mariana Brito": "253459",
+                                            "Fernando Ulrich": "85170",
+                                            "category": "Jan - 21"
+                                        },
+                                        {
+                                            "Bruno Garschagen": "107743",
+                                            "Bruno Perini": "741915",
+                                            "Ricardo Amorim":"793438",
+                                            "Renata Barreto": "373057",
+                                            "Mariana Brito": "276304",
+                                            "Fernando Ulrich": "92066",
+                                            "category": "Fev - 21"
+                                        },
+                                        {
+                                            "Bruno Garschagen": "113452",
+                                            "Bruno Perini": "762554",
+                                            "Ricardo Amorim":"809747",
+                                            "Renata Barreto": "379225",
+                                            "Mariana Brito": "281785",
+                                            "Fernando Ulrich": "95385",
+                                            "category": "Mar - 21"
+                                        },
+                                        {
+                                            "Bruno Garschagen": "122367",
+                                            "Bruno Perini": "821653",
+                                            "Ricardo Amorim":"853915",
+                                            "Renata Barreto": "396174",
+                                            "Mariana Brito": "303818",
+                                            "Fernando Ulrich": "100228",
+                                            "category": "Abr - 21"
+                                        },
+                                        {
+                                            "Bruno Garschagen": "125519",
+                                            "Bruno Perini": "874363",
+                                            "Ricardo Amorim":"868839",
+                                            "Renata Barreto": "413336",
+                                            "Mariana Brito": "317831",
+                                            "Fernando Ulrich": "106989",
+                                            "category": "Mai - 21"
+                                        },
+                                        {
+                                            "Bruno Garschagen": "125989",
+                                            "Bruno Perini": "958319",
+                                            "Ricardo Amorim":"875061",
+                                            "Renata Barreto": "427065",
+                                            "Mariana Brito": "327786",
+                                            "Fernando Ulrich": "113112",
+                                            "category": "Jun - 21"
+                                        },
+                                        {
+                                            "Bruno Garschagen": "128308",
+                                            "Bruno Perini": "1075264",
+                                            "Ricardo Amorim":"899754",
+                                            "Renata Barreto": "458653",
+                                            "Mariana Brito": "342607",
+                                            "Fernando Ulrich": "118969",
+                                            "category": "Jul - 21"
+                                        },
+                                        {
+                                            "Bruno Garschagen": "130310",
+                                            "Bruno Perini": "1138879",
+                                            "Ricardo Amorim":"931292",
+                                            "Renata Barreto": "497423",
+                                            "Mariana Brito": "357722",
+                                            "Fernando Ulrich": "121913",
+                                            "category": "Ago - 21"
+                                        }
+                                    ]
+                                }
+                            );
+                        </script>
+                        <p></p> 
+                </div>
+                <!-- Influencers 2-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div id="chartdiv2" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>                    
+                        <!-- amCharts javascript code -->
+                        <script type="text/javascript">
+                            AmCharts.makeChart("chartdiv2",
+                                {
+                                    "type": "serial",
+                                    "categoryField": "category",
+                                    "startDuration": 1,
+                                    "theme": "default",
+                                    "categoryAxis": {
+                                        "gridPosition": "start"
+                                    },
+                                    "trendLines": [],
+                                    "graphs": [                                        
+                                        {
+                                            "accessibleLabel": "Dennys Xavier",                                            
+                                            "bullet": "round",
+                                            "id": "AmGraph-1",
+                                            "title": "Dennys Xavier",
+                                            "type": "smoothedLine",
+                                            "valueField": "Dennys Xavier"
+                                        },
+                                        {
+                                            "id": "AmGraph-2",
+                                            "bullet": "round",
+                                            "title": "Andre Costa - Leis Absurdas",
+                                            "type": "smoothedLine",
+                                            "valueField": "Andre Costa"
+                                        },
+                                        {
+                                            "id": "AmGraph-3",
+                                            "bullet": "round",
+                                            "title": "Arthur Morisson",
+                                            "type": "smoothedLine",
+                                            "valueField": "Arthur Morisson"
+                                        },
+                                        {
+                                            "id": "AmGraph-4",
+                                            "bullet": "round",
+                                            "title": "Sentinela da Liberdade",
+                                            "type": "smoothedLine",
+                                            "valueField": "Sentinela da Liberdade"
+                                        },
+                                        {
+                                            "accessibleLabel": "Raphael Lima",                                            
+                                            "bullet": "round",
+                                            "id": "AmGraph-5",
+                                            "title": "Raphael Lima",
+                                            "type": "smoothedLine",
+                                            "valueField": "Raphael Lima"
+                                        },
+                                    ],
+                                    "guides": [],
+                                    "valueAxes": [
+                                        {
+                                            "id": "ValueAxis-1",
+                                            "title": "Seguidores"
+                                        }
+                                    ],
+                                    "allLabels": [],
+                                    "balloon": {},
+                                    "legend": {
+                                        "enabled": true,
+                                        "accessibleLabel": "Seguidores",
+                                        "rollOverGraphAlpha": 0,
+                                        "useGraphSettings": true
+                                    },
+                                    "titles": [
+                                        {
+                                            "id": "Title-1",
+                                            "size": 15,
+                                            "text": "Influencers"
+                                        }
+                                    ],
+                                    "dataProvider": [
+                                        {
+                                            "Dennys Xavier": "78205",
+                                            "Andre Costa": "77727",
+                                            "Arthur Morisson": "18122",
+                                            "Sentinela da Liberdade": "43482",
+                                            "Raphael Lima": "43083",
+                                            "category": "Dez - 20"
+                                        },
+                                        {
+                                            "Dennys Xavier": "79108",
+                                            "Andre Costa": "78964",
+                                            "Arthur Morisson": "31814",
+                                            "Sentinela da Liberdade": "43672",
+                                            "Raphael Lima": "43710",
+                                            "category": "Jan - 21"
+                                        },
+                                        {
+                                            "Dennys Xavier": "80666",
+                                            "Andre Costa": "82942",
+                                            "Arthur Morisson": "35119",
+                                            "Sentinela da Liberdade": "45375",
+                                            "Raphael Lima": "43434",
+                                            "category": "Fev - 21"
+                                        },
+                                        {
+                                            "Dennys Xavier": "81167",
+                                            "Andre Costa": "83473",
+                                            "Arthur Morisson": "37974",
+                                            "Sentinela da Liberdade": "46337",
+                                            "Raphael Lima": "43028",
+                                            "category": "Mar - 21"
+                                        },
+                                        {
+                                            "Dennys Xavier": "81720",
+                                            "Andre Costa": "83992",
+                                            "Arthur Morisson": "42663",
+                                            "Sentinela da Liberdade": "46662",
+                                            "Raphael Lima": "42925",
+                                            "category": "Abr - 21"
+                                        },
+                                        {
+                                            "Dennys Xavier": "81856",
+                                            "Andre Costa": "85852",
+                                            "Arthur Morisson": "43797",
+                                            "Sentinela da Liberdade": "46201",
+                                            "Raphael Lima": "43176",
+                                            "category": "Mai - 21"
+                                        },
+                                        {
+                                            "Dennys Xavier": "81722",
+                                            "Andre Costa": "84901",
+                                            "Arthur Morisson": "46008",
+                                            "Sentinela da Liberdade": "46065",
+                                            "Raphael Lima": "42971",
+                                            "category": "Jun - 21"
+                                        },
+                                        {
+                                            "Dennys Xavier": "83274",
+                                            "Andre Costa": "84038",
+                                            "Arthur Morisson": "49489",
+                                            "Sentinela da Liberdade": "45829",
+                                            "Raphael Lima": "43255",
+                                            "category": "Jul - 21"
+                                        },
+                                        {
+                                            "Dennys Xavier": "83226",
+                                            "Andre Costa": "83425",
+                                            "Arthur Morisson": "51876",
+                                            "Sentinela da Liberdade": "46698",
+                                            "Raphael Lima": "43156",
+                                            "category": "Ago - 21"
+                                        }
+                                    ]
+                                }
+                            );
+                        </script>
+                        <p></p> 
+                </div>
+                <!-- Institutos-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div id="chartdiv3" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>                    
+                        <!-- amCharts javascript code -->
+                        <script type="text/javascript">
+                            AmCharts.makeChart("chartdiv3",
+                                {
+                                    "type": "serial",
+                                    "categoryField": "category",
+                                    "startDuration": 1,
+                                    "theme": "default",
+                                    "categoryAxis": {
+                                        "gridPosition": "start"
+                                    },
+                                    "trendLines": [],
+                                    "graphs": [                                        
+                                        {
+                                            "accessibleLabel": "Ranking dos Políticos",                                            
+                                            "bullet": "round",
+                                            "id": "AmGraph-1",
+                                            "title": "Ranking dos Políticos",
+                                            "type": "smoothedLine",
+                                            "valueField": "Ranking dos Políticos"
+                                        },
+                                        {
+                                            "accessibleLabel": "Caneta Desesquerdizadora",                                            
+                                            "bullet": "round",
+                                            "id": "AmGraph-2",
+                                            "title": "Caneta Desesquerdizadora",
+                                            "type": "smoothedLine",
+                                            "valueField": "Caneta Desesquerdizadora"
+                                        },
+                                        {
+                                            "id": "AmGraph-3",
+                                            "bullet": "round",
+                                            "title": "Instituto Mises",
+                                            "type": "smoothedLine",
+                                            "valueField": "Instituto Mises"
+                                        },                                        
+                                        {
+                                            "id": "AmGraph-4",
+                                            "bullet": "round",
+                                            "title": "Ideias Radicais",
+                                            "type": "smoothedLine",
+                                            "valueField": "Ideias Radicais"
+                                        },
+                                        {
+                                            "id": "AmGraph-5",
+                                            "bullet": "round",
+                                            "title": "Instituto Millenium",
+                                            "type": "smoothedLine",
+                                            "valueField": "Instituto Millenium"
+                                        },
+                                    ],
+                                    "guides": [],
+                                    "valueAxes": [
+                                        {
+                                            "id": "ValueAxis-1",
+                                            "title": "Seguidores"
+                                        }
+                                    ],
+                                    "allLabels": [],
+                                    "balloon": {},
+                                    "legend": {
+                                        "enabled": true,
+                                        "accessibleLabel": "Seguidores",
+                                        "rollOverGraphAlpha": 0,
+                                        "useGraphSettings": true
+                                    },
+                                    "titles": [
+                                        {
+                                            "id": "Title-1",
+                                            "size": 15,
+                                            "text": "Institutos e Páginas"
+                                        }
+                                    ],
+                                    "dataProvider": [
+                                        {
+                                            "Ranking dos Políticos": "264737",
+                                            "Instituto Mises": "93169",
+                                            "Ideias Radicais": "42850",
+                                            "Caneta Desesquerdizadora": "230542",
+                                            "Instituto Millenium": "52346",
+                                            "category": "Nov - 20"
+                                        },
+                                        {
+                                            "Ranking dos Políticos": "276119",
+                                            "Instituto Mises": "97062",
+                                            "Ideias Radicais": "44701",
+                                            "Caneta Desesquerdizadora": "234840",
+                                            "Instituto Millenium": "51394",
+                                            "category": "Dez - 20"
+                                        },
+                                        {
+                                            "Ranking dos Políticos": "285504",
+                                            "Instituto Mises": "98201",
+                                            "Ideias Radicais": "46735",
+                                            "Caneta Desesquerdizadora": "234960",
+                                            "Instituto Millenium": "49827",
+                                            "category": "Jan - 21"
+                                        },
+                                        {
+                                            "Ranking dos Políticos": "291966",
+                                            "Instituto Mises": "99735",
+                                            "Ideias Radicais": "48112",
+                                            "Caneta Desesquerdizadora": "234386",
+                                            "Instituto Millenium": "48930",
+                                            "category": "Fev - 21"
+                                        },
+                                        {
+                                            "Ranking dos Políticos": "298039",
+                                            "Instituto Mises": "100507",
+                                            "Ideias Radicais": "48844",
+                                            "Caneta Desesquerdizadora": "233980",
+                                            "Instituto Millenium": "48247",
+                                            "category": "Mar - 21"
+                                        },
+                                        {
+                                            "Ranking dos Políticos": "321492",
+                                            "Instituto Mises": "101973",
+                                            "Ideias Radicais": "50893",
+                                            "Caneta Desesquerdizadora": "236066",
+                                            "Instituto Millenium": "47615",
+                                            "category": "Abr - 21"
+                                        },
+                                        {
+                                            "Ranking dos Políticos": "326954",
+                                            "Instituto Mises": "104749",
+                                            "Ideias Radicais": "52756",
+                                            "Caneta Desesquerdizadora": "234611",
+                                            "Instituto Millenium": "50007",
+                                            "category": "Mai - 21"
+                                        },
+                                        {
+                                            "Ranking dos Políticos": "334042",
+                                            "Instituto Mises": "108009",
+                                            "Ideias Radicais": "53637",
+                                            "Caneta Desesquerdizadora": "234203",
+                                            "Instituto Millenium": "49148",
+                                            "category": "Jun - 21"
+                                        },
+                                        {
+                                            "Ranking dos Políticos": "344108",
+                                            "Instituto Mises": "112864",
+                                            "Ideias Radicais": "56397",
+                                            "Caneta Desesquerdizadora": "238120",
+                                            "Instituto Millenium": "48538",
+                                            "category": "Jul - 21"
+                                        },
+                                        {
+                                            "Ranking dos Políticos": "356946",
+                                            "Instituto Mises": "116690",
+                                            "Ideias Radicais": "57527",
+                                            "Caneta Desesquerdizadora": "239121",
+                                            "Instituto Millenium": "47943",
+                                            "category": "Ago - 21"
+                                        }
+                                    ]
+                                }
+                            );
+                        </script>
+                        <p></p> 
+                </div>
+                <!-- Institutos-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div id="chartdiv4" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>                    
+                        <!-- amCharts javascript code -->
+                        <script type="text/javascript">
+                            AmCharts.makeChart("chartdiv4",
+                                {
+                                    "type": "serial",
+                                    "categoryField": "category",
+                                    "startDuration": 1,
+                                    "theme": "default",
+                                    "categoryAxis": {
+                                        "gridPosition": "start"
+                                    },
+                                    "trendLines": [],
+                                    "graphs": [                                        
+                                        {
+                                            "accessibleLabel": "SFL Brasil",                                            
+                                            "bullet": "round",
+                                            "id": "AmGraph-1",
+                                            "title": "SFL Brasil",
+                                            "type": "smoothedLine",
+                                            "valueField": "SFL Brasil"
+                                        },
+                                        {
+                                            "accessibleLabel": "ANCAP.SU",                                            
+                                            "bullet": "round",
+                                            "id": "AmGraph-2",
+                                            "title": "ANCAP.SU",
+                                            "type": "smoothedLine",
+                                            "valueField": "ANCAP.SU"
+                                        },
+                                        {
+                                            "id": "AmGraph-3",
+                                            "bullet": "round",
+                                            "title": "Instituto Rothbard",
+                                            "type": "smoothedLine",
+                                            "valueField": "Instituto Rothbard"
+                                        },                                        
+                                        {
+                                            "id": "AmGraph-4",
+                                            "bullet": "round",
+                                            "title": "Boletim da Liberdade",
+                                            "type": "smoothedLine",
+                                            "valueField": "Boletim da Liberdade"
+                                        },
+                                        {
+                                            "id": "AmGraph-5",
+                                            "bullet": "round",
+                                            "title": "Tapa da Mão Invisível",
+                                            "type": "smoothedLine",
+                                            "valueField": "Tapa da Mão Invisível"
+                                        },
+                                    ],
+                                    "guides": [],
+                                    "valueAxes": [
+                                        {
+                                            "id": "ValueAxis-1",
+                                            "title": "Seguidores"
+                                        }
+                                    ],
+                                    "allLabels": [],
+                                    "balloon": {},
+                                    "legend": {
+                                        "enabled": true,
+                                        "accessibleLabel": "Seguidores",
+                                        "rollOverGraphAlpha": 0,
+                                        "useGraphSettings": true
+                                    },
+                                    "titles": [
+                                        {
+                                            "id": "Title-1",
+                                            "size": 15,
+                                            "text": "Institutos e Páginas"
+                                        }
+                                    ],
+                                    "dataProvider": [
+                                        {
+                                            "SFL Brasil": "37151",
+                                            "ANCAP.SU": "11897",                                            
+                                            "Boletim da Liberdade": "7783",
+                                            "Tapa da Mão Invisível": "6387",
+                                            "category": "Nov - 20"
+                                        },
+                                        {
+                                            "SFL Brasil": "39106",
+                                            "ANCAP.SU": "12645",                                            
+                                            "Boletim da Liberdade": "7726",
+                                            "Tapa da Mão Invisível": "6844",
+                                            "category": "Dez - 20"
+                                        },
+                                        {
+                                            "SFL Brasil": "40248",
+                                            "ANCAP.SU": "13171",                                            
+                                            "Boletim da Liberdade": "7584",
+                                            "Tapa da Mão Invisível": "7092",
+                                            "category": "Jan - 21"
+                                        },
+                                        {
+                                            "SFL Brasil": "40614",
+                                            "ANCAP.SU": "14039",
+                                            "Instituto Rothbard": "9352",
+                                            "Boletim da Liberdade": "8422",
+                                            "Tapa da Mão Invisível": "7357",
+                                            "category": "Fev - 21"
+                                        },
+                                        {
+                                            "SFL Brasil": "40990",
+                                            "ANCAP.SU": "14661",
+                                            "Instituto Rothbard": "10189",
+                                            "Boletim da Liberdade": "8760",
+                                            "Tapa da Mão Invisível": "8123",
+                                            "category": "Mar - 21"
+                                        },
+                                        {
+                                            "SFL Brasil": "41602",
+                                            "ANCAP.SU": "15670",
+                                            "Instituto Rothbard": "11445",
+                                            "Boletim da Liberdade": "8897",
+                                            "Tapa da Mão Invisível": "8209",
+                                            "category": "Abr - 21"
+                                        },
+                                        {
+                                            "SFL Brasil": "41922",
+                                            "ANCAP.SU": "16408",
+                                            "Instituto Rothbard": "12700",
+                                            "Boletim da Liberdade": "8909",
+                                            "Tapa da Mão Invisível": "8400",
+                                            "category": "Mai - 21"
+                                        },
+                                        {
+                                            "SFL Brasil": "43057",
+                                            "ANCAP.SU": "17048",
+                                            "Instituto Rothbard": "13150S",
+                                            "Boletim da Liberdade": "9201",
+                                            "Tapa da Mão Invisível": "8407",
+                                            "category": "Jun - 21"
+                                        },
+                                        {
+                                            "SFL Brasil": "44002",
+                                            "ANCAP.SU": "18246",
+                                            "Instituto Rothbard": "13600",
+                                            "Boletim da Liberdade": "9397",
+                                            "Tapa da Mão Invisível": "8708",
+                                            "category": "Jul - 21"
+                                        },
+                                        {
+                                            "SFL Brasil": "44713",
+                                            "ANCAP.SU": "19428",
+                                            "Instituto Rothbard": "13800",
+                                            "Boletim da Liberdade": "9401",
+                                            "Tapa da Mão Invisível": "8802",
+                                            "category": "Ago - 21"
+                                        }
+                                    ]
+                                }
+                            );
+                        </script>
+                        <p></p> 
+                </div>
+                <!-- Institutos-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div id="chartdiv5" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>                    
+                        <!-- amCharts javascript code -->
+                        <script type="text/javascript">
+                            AmCharts.makeChart("chartdiv5",
+                                {
+                                    "type": "serial",
+                                    "categoryField": "category",
+                                    "startDuration": 1,
+                                    "theme": "default",
+                                    "categoryAxis": {
+                                        "gridPosition": "start"
+                                    },
+                                    "trendLines": [],
+                                    "graphs": [                                        
+                                        {
+                                            "accessibleLabel": "Expresso Libertário",                                            
+                                            "bullet": "round",
+                                            "id": "AmGraph-1",
+                                            "title": "Expresso Libertário",
+                                            "type": "smoothedLine",
+                                            "valueField": "Expresso Libertário"
+                                        },
+                                        {
+                                            "accessibleLabel": "Clube Caiapós",                                            
+                                            "bullet": "round",
+                                            "id": "AmGraph-2",
+                                            "title": "Clube Caiapós",
+                                            "type": "smoothedLine",
+                                            "valueField": "Clube Caiapós"
+                                        },
+                                        {
+                                            "id": "AmGraph-3",
+                                            "bullet": "round",
+                                            "title": "USP Liberal",
+                                            "type": "smoothedLine",
+                                            "valueField": "USP Liberal"
+                                        },                                        
+                                        {
+                                            "id": "AmGraph-4",
+                                            "bullet": "round",
+                                            "title": "Semente da Liberdade",
+                                            "type": "smoothedLine",
+                                            "valueField": "Semente da Liberdade"
+                                        },
+                                        {
+                                            "id": "AmGraph-5",
+                                            "bullet": "round",
+                                            "title": "Damas de Ferro",
+                                            "type": "smoothedLine",
+                                            "valueField": "Damas de Ferro"
+                                        },
+                                    ],
+                                    "guides": [],
+                                    "valueAxes": [
+                                        {
+                                            "id": "ValueAxis-1",
+                                            "title": "Seguidores"
+                                        }
+                                    ],
+                                    "allLabels": [],
+                                    "balloon": {},
+                                    "legend": {
+                                        "enabled": true,
+                                        "accessibleLabel": "Seguidores",
+                                        "rollOverGraphAlpha": 0,
+                                        "useGraphSettings": true
+                                    },
+                                    "titles": [
+                                        {
+                                            "id": "Title-1",
+                                            "size": 15,
+                                            "text": "Grupos Estudantis"
+                                        }
+                                    ],
+                                    "dataProvider": [
+                                        {
+                                            "Expresso Libertário": "1845",                                            
+                                            "category": "Nov - 20"
+                                        },
+                                        {
+                                            "Expresso Libertário": "1960",                                           
+                                            "category": "Dez - 20"
+                                        },
+                                        {
+                                            "Expresso Libertário": "2079",
+                                            "Clube Caiapós": "1470",                                            
+                                            "USP Liberal": "1602",
+                                            "Semente da Liberdade": "422",
+                                            "Damas de Ferro": "587",
+                                            "category": "Jan - 21"
+                                        },
+                                        {
+                                            "Expresso Libertário": "2113",
+                                            "Clube Caiapós": "1550",                                            
+                                            "USP Liberal": "1605",
+                                            "Semente da Liberdade": "519",
+                                            "Damas de Ferro": "642",
+                                            "category": "Fev - 21"
+                                        },
+                                        {
+                                            "Expresso Libertário": "2184",
+                                            "Clube Caiapós": "1630",                                            
+                                            "USP Liberal": "1609",
+                                            "Semente da Liberdade": "617",
+                                            "Damas de Ferro": "661",
+                                            "category": "Mar - 21"
+                                        },
+                                        {
+                                            "Expresso Libertário": "2259",
+                                            "Clube Caiapós": "1710",                                            
+                                            "USP Liberal": "1612",
+                                            "Semente da Liberdade": "715",
+                                            "Damas de Ferro": "698",
+                                            "category": "Abr - 21"
+                                        },
+                                        {
+                                            "Expresso Libertário": "2568",
+                                            "Clube Caiapós": "1791",                                            
+                                            "USP Liberal": "1616",
+                                            "Semente da Liberdade": "813",
+                                            "Damas de Ferro": "736",
+                                            "category": "Mai - 21"
+                                        },
+                                        {
+                                            "Expresso Libertário": "2600",
+                                            "Clube Caiapós": "1843",                                            
+                                            "USP Liberal": "1677",
+                                            "Semente da Liberdade": "989",
+                                            "Damas de Ferro": "801",
+                                            "category": "Jun - 21"
+                                        },
+                                        {
+                                            "Expresso Libertário": "2689",
+                                            "Clube Caiapós": "1896",                                            
+                                            "USP Liberal": "1739",
+                                            "Semente da Liberdade": "1117",
+                                            "Damas de Ferro": "845",
+                                            "category": "Jul - 21"
+                                        },
+                                        {
+                                            "Expresso Libertário": "2781",
+                                            "Clube Caiapós": "2044",                                            
+                                            "USP Liberal": "1804",
+                                            "Semente da Liberdade": "1165",
+                                            "Damas de Ferro": "866",
+                                            "category": "Ago - 21"
+                                        },
+                                        {
+                                            "Expresso Libertário": "3058",
+                                            "Clube Caiapós": "2261",                                            
+                                            "USP Liberal": "1808",
+                                            "Semente da Liberdade": "1632",
+                                            "Damas de Ferro": "939",
+                                            "category": "Set - 21"
+                                        },                                        
+                                    ]
+                                }
+                            );
+                        </script>
+                        <p></p> 
+                </div>
+                <!-- Partidos-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div id="chartdiv6" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>                    
+                    <!-- amCharts javascript code -->
+                    <script type="text/javascript">
+                        AmCharts.makeChart("chartdiv6",
+                            {
+                                "type": "serial",
+                                "categoryField": "category",
+                                "startDuration": 1,
+                                "theme": "default",
+                                "categoryAxis": {
+                                    "gridPosition": "start"
+                                },
+                                "trendLines": [],
+                                "graphs": [
+                                    {
+                                        "id": "AmGraph-1",
+                                        "bullet": "round",
+                                        "title": "APB",
+                                        "type": "smoothedLine",
+                                        "valueField": "APB"
+                                    },
+                                    {
+                                        "id": "AmGraph-2",
+                                        "bullet": "round",
+                                        "title": "MBL",
+                                        "type": "smoothedLine",
+                                        "valueField": "MBL"
+                                    },
+                                    {
+                                        "accessibleLabel": "PT",                                       
+                                        "bullet": "round",
+                                        "id": "AmGraph-3",
+                                        "title": "PT",
+                                        "type": "smoothedLine",
+                                        "valueField": "PT"
+                                    },
+                                    {
+                                        "accessibleLabel": "Novo",                                        
+                                        "bullet": "round",
+                                        "id": "AmGraph-4",
+                                        "title": "Novo",
+                                        "type": "smoothedLine",
+                                        "valueField": "Novo"
+                                    },
+                                    {
+                                        "id": "AmGraph-5",
+                                        "bullet": "round",
+                                        "title": "PSOL",
+                                        "type": "smoothedLine",
+                                        "valueField": "PSOL"
+                                    },
+                                    {
+                                        "id": "AmGraph-6",
+                                        "bullet": "round",
+                                        "title": "PSL",
+                                        "type": "smoothedLine",
+                                        "valueField": "PSL"
+                            },                                                                         
+                                ],
+                                "guides": [],
+                                "valueAxes": [
+                                    {
+                                        "id": "ValueAxis-1",
+                                        "title": "Seguidores"
+                                    }
+                                ],
+                                "allLabels": [],
+                                "balloon": {},
+                                "legend": {
+                                    "enabled": true,
+                                    "accessibleLabel": "Seguidores",
+                                    "rollOverGraphAlpha": 0,
+                                    "useGraphSettings": true
+                                },
+                                "titles": [
+                                    {
+                                        "id": "Title-1",
+                                        "size": 15,
+                                        "text": "Partidos"
+                                    }
+                                ],
+                                "dataProvider": [
+                                        {
+                                        "PT": "455261",
+                                        "Novo": "393827",
+                                        "PSOL": "229999",
+                                        "APB": "638950",
+                                        "MBL": "851815",
+                                        "PSL": "396087",
+                                        "category": "Jan - 20"
+                                    },
+                                    {
+                                        "PT": "461082",
+                                        "Novo": "394418",
+                                        "PSOL": "234944",
+                                        "APB": "716095",
+                                        "MBL": "847775",
+                                        "PSL": "387244",
+                                        "category": "Fev"
+                                    },
+                                    {
+                                        "PT": "466532",
+                                        "Novo": "393606",
+                                        "PSOL": "239807",
+                                        "APB": "767081",
+                                        "MBL": "848323",
+                                        "PSL": "372925",
+                                        "category": "Mar"
+                                    },
+                                    {
+                                        "PT": "478540",
+                                        "Novo": "400745",
+                                        "PSOL": "251069",
+                                        "APB": "805908",
+                                        "MBL": "856986",
+                                        "PSL": "344273",
+                                        "category": "Abr"
+                                    },
+                                    {
+                                        "PT": "492386",
+                                        "Novo": "407558",
+                                        "PSOL": "261461",
+                                        "APB": "807656",
+                                        "MBL": "792045",
+                                        "PSL": "310600",
+                                        "category": "Mai"
+                                    },
+                                    {
+                                        "PT": "502053",
+                                        "Novo": "413944",
+                                        "PSOL": "275261",
+                                        "APB": "819549",
+                                        "MBL": "751937",
+                                        "PSL": "300004",
+                                        "category": "Jun"
+                                    },
+                                    {
+                                        "PT": "507779",
+                                        "Novo": "418068",
+                                        "PSOL": "283949",
+                                        "APB": "871478",
+                                        "MBL": "733915",
+                                        "PSL": "295426",
+                                        "category": "Jul"
+                                    },
+                                    {
+                                        "PT": "511998",
+                                        "Novo": "419384",
+                                        "PSOL": "289688",
+                                        "APB": "916063",
+                                        "MBL": "721944",
+                                        "PSL": "291674",
+                                        "category": "Ago"
+                                    },
+                                    {
+                                        "PT": "516180",
+                                        "Novo": "419264",
+                                        "PSOL": "293800",
+                                        "APB": "936554",
+                                        "MBL": "715820",
+                                        "PSL": "288877",
+                                        "category": "Set"
+                                    },
+                                    {
+                                        "PT": "520977",
+                                        "Novo": "418753",
+                                        "PSOL": "300309",
+                                        "APB": "950965",
+                                        "MBL": "709968",
+                                        "PSL": "286628",
+                                        "category": "Out"
+                                    },
+                                    {
+                                        "PT": "524881",
+                                        "Novo": "418802",
+                                        "PSOL": "306782",
+                                        "APB": "959392",
+                                        "MBL": "707885",
+                                        "PSL": "283475",
+                                        "category": "Nov"
+                                    },
+                                    {
+                                        "PT": "530135",
+                                        "Novo": "422680",
+                                        "PSOL": "326721",
+                                        "APB": "966035",
+                                        "MBL": "710400",
+                                        "PSL": "279549",
+                                        "category": "Dez - 20"
+                                    },
+                                    {
+                                        "PT": "532389",
+                                        "Novo": "420547",
+                                        "PSOL": "334188",
+                                        "APB": "967040",
+                                        "MBL": "710518",
+                                        "PSL": "277283",
+                                        "category": "Jan - 21"
+                                    },
+                                    {
+                                        "PT": "536249",
+                                        "Novo": "412799",
+                                        "PSOL": "339133",
+                                        "APB": "968047",
+                                        "MBL": "689545",
+                                        "PSL": "272826",
+                                        "category": "Fev"
+                                    },
+                                    {
+                                        "PT": "538985",
+                                        "Novo": "408568",
+                                        "PSOL": "339823",
+                                        "APB": "968803",
+                                        "MBL": "680454",
+                                        "PSL": "269655",
+                                        "category": "Mar"
+                                    },
+                                    {
+                                        "PT": "569699",
+                                        "Novo": "405426",
+                                        "PSOL": "344903",
+                                        "APB": "973125",
+                                        "MBL": "671784",
+                                        "PSL": "266744",
+                                        "category": "Abr"
+                                    },
+                                    {
+                                        "PT": "574814",
+                                        "Novo": "401821",
+                                        "PSOL": "345321",
+                                        "APB": "977209",
+                                        "MBL": "664604",
+                                        "PSL": "264409",
+                                        "category": "Mai"
+                                    },
+                                    {
+                                        "PT": "590912",
+                                        "Novo": "398332",
+                                        "PSOL": "346279",
+                                        "APB": "977177",
+                                        "MBL": "658800",
+                                        "PSL": "262336",
+                                        "category": "Jun"
+                                    },
+                                    {
+                                        "PT": "613174",
+                                        "Novo": "401636",
+                                        "PSOL": "350776",
+                                        "APB": "981861",
+                                        "MBL": "658695",
+                                        "PSL": "260756",
+                                        "category": "Jul"
+                                    },
+                                    {
+                                        "PT": "622900",
+                                        "Novo": "396361",
+                                        "PSOL": "351970",
+                                        "APB": "977733",
+                                        "MBL": "654984",
+                                        "PSL": "256282",
+                                        "category": "Ago - 21"
+                                    }
+                                ]
+                            }
+                        );
+                    </script>
+                    <p>Observação: Não apoiamos nenhum partido político.</p>           
+         <!-- Partidos 2-->
+         <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+            <div id="chartdiv7" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>                    
+            <!-- amCharts javascript code -->
+            <script type="text/javascript">
+                AmCharts.makeChart("chartdiv7",
+                    {
+                        "type": "serial",
+                        "categoryField": "category",
+                        "startDuration": 1,
+                        "theme": "default",
+                        "categoryAxis": {
+                            "gridPosition": "start"
+                        },
+                        "trendLines": [],
+                        "graphs": [                                                        
+                            {
+                                "id": "AmGraph-1",
+                                "bullet": "round",
+                                "title": "PDT",
+                                "type": "smoothedLine",
+                                "valueField": "PDT"
+                            },
+                            {
+                                "id": "AmGraph-2",
+                                "bullet": "round",
+                                "title": "PSDB",
+                                "type": "smoothedLine",
+                                "valueField": "PSDB"
+                            },
+                            {
+                                "accessibleLabel": "Republicanos",                                
+                                "bullet": "round",
+                                "id": "AmGraph-3",
+                                "title": "Republicanos",
+                                "type": "smoothedLine",
+                                "valueField": "Republicanos"
+                            }, 
+                            {
+                                "accessibleLabel": "Democratas",                                
+                                "bullet": "round",
+                                "id": "AmGraph-4",
+                                "title": "Democratas",
+                                "type": "smoothedLine",
+                                "valueField": "Democratas"
+                            },            
+                            {
+                                "accessibleLabel": "MDB",                                
+                                "bullet": "round",
+                                "id": "AmGraph-5",
+                                "title": "MDB",
+                                "type": "smoothedLine",
+                                "valueField": "MDB"
+                            },                                                   
+                        ],
+                        "guides": [],
+                        "valueAxes": [
+                            {
+                                "id": "ValueAxis-1",
+                                "title": "Seguidores"
+                            }
+                        ],
+                        "allLabels": [],
+                        "balloon": {},
+                        "legend": {
+                            "enabled": true,
+                            "accessibleLabel": "Seguidores",
+                            "rollOverGraphAlpha": 0,
+                            "useGraphSettings": true
+                        },
+                        "titles": [
+                            {
+                                "id": "Title-1",
+                                "size": 15,
+                                "text": "Partidos"
+                            }
+                        ],
+                        "dataProvider": [
+                            {
+                                "Democratas": "25315",
+                                "MDB": "23529",                                
+                                "PSDB": "32578",
+                                "PDT": "46676",
+                                "Republicanos":"31183",
+                                "category": "Dez - 20"
+                            },
+                            {
+                                "Democratas": "25565",
+                                "MDB": "24010",                                
+                                "PSDB": "32872",
+                                "PDT": "47248",
+                                "Republicanos":"31232",
+                                "category": "Jan - 21"
+                            },
+                            {
+                                "Democratas": "26559",
+                                "MDB": "24892",                                
+                                "PSDB": "33307",
+                                "PDT": "47843",
+                                "Republicanos":"31324",
+                                "category": "Fev - 21"
+                            },
+                            {
+                                "Democratas": "27330",
+                                "MDB": "25084",                                
+                                "PSDB": "33592",
+                                "PDT": "48181",
+                                "Republicanos":"31421",
+                                "category": "Mar - 21"
+                            },
+                            {
+                                "Democratas": "28233",
+                                "MDB": "25346",                                
+                                "PSDB": "34009",
+                                "PDT": "48788",
+                                "Republicanos":"31549",
+                                "category": "Abr - 21"
+                            },
+                            {
+                                "Democratas": "28362",
+                                "MDB": "25466",                                
+                                "PSDB": "34175",
+                                "PDT": "48998",
+                                "Republicanos":"31697",
+                                "category": "Mai - 21"
+                            },
+                            {
+                                "Democratas": "28932",
+                                "MDB": "25703",                                
+                                "PSDB": "35314",
+                                "PDT": "49076",
+                                "Republicanos":"31963",
+                                "category": "Jun - 21"
+                            },
+                            {
+                                "Democratas": "29094",
+                                "MDB": "26007",                                
+                                "PSDB": "35996",
+                                "PDT": "50064",
+                                "Republicanos":"32060",
+                                "category": "Jul - 21"
+                            },
+                            {
+                                "Democratas": "29213",
+                                "MDB": "26294",                                
+                                "PSDB": "36739",
+                                "PDT": "50552",
+                                "Republicanos":"32197",
+                                "category": "Ago - 21"
+                            }
+                        ]
+                    }
+                );
+            </script>
+            <p>Observação: Não apoiamos nenhum partido político.</p>   
+         <!-- Partidos 3-->
+         <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+            <div id="chartdiv8" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>                    
+            <!-- amCharts javascript code -->
+            <script type="text/javascript">
+                AmCharts.makeChart("chartdiv8",
+                    {
+                        "type": "serial",
+                        "categoryField": "category",
+                        "startDuration": 1,
+                        "theme": "default",
+                        "categoryAxis": {
+                            "gridPosition": "start"
+                        },
+                        "trendLines": [],
+                        "graphs": [                                                        
+                            {
+                                "id": "AmGraph-1",
+                                "bullet": "round",
+                                "title": "PSB",
+                                "type": "smoothedLine",
+                                "valueField": "PSB"
+                            },
+                            {
+                                "id": "AmGraph-2",
+                                "bullet": "round",
+                                "title": "PP",
+                                "type": "smoothedLine",
+                                "valueField": "PP"
+                            },
+                            {                            
+                                "bullet": "round",
+                                "id": "AmGraph-3",
+                                "title": "PTB",
+                                "type": "smoothedLine",
+                                "valueField": "PTB"
+                            },            
+                            {                             
+                                "bullet": "round",
+                                "id": "AmGraph-4",
+                                "title": "PL",
+                                "type": "smoothedLine",
+                                "valueField": "PL"
+                            },
+                            {
+                                "id": "AmGraph-5",
+                                "bullet": "round",
+                                "title": "LIBER",
+                                "type": "smoothedLine",
+                                "valueField": "LIBER"
+                            },                        
+                        ],
+                        "guides": [],
+                        "valueAxes": [
+                            {
+                                "id": "ValueAxis-1",
+                                "title": "Seguidores"
+                            }
+                        ],
+                        "allLabels": [],
+                        "balloon": {},
+                        "legend": {
+                            "enabled": true,
+                            "accessibleLabel": "Seguidores",
+                            "rollOverGraphAlpha": 0,
+                            "useGraphSettings": true
+                        },
+                        "titles": [
+                            {
+                                "id": "Title-1",
+                                "size": 15,
+                                "text": "Partidos"
+                            }
+                        ],
+                        "dataProvider": [
+                            {
+                                "PP": "12528",
+                                "PTB": "4677",
+                                "PSB": "14960",                                
+                                "category": "Dez - 20"
+                            },
+                            {
+                                "PP": "12662",
+                                "PTB": "4901",
+                                "PSB": "15075",                                
+                                "category": "Jan - 21"
+                            },
+                            {
+                                "PP": "12778",
+                                "PTB": "5032",
+                                "PSB": "15107",
+                                "PL": "6108",                                
+                                "category": "Fev - 21"
+                            },
+                            {
+                                "PP": "13082",
+                                "PTB": "5517",
+                                "PSB": "15138",
+                                "PL": "6157",                                
+                                "category": "Mar - 21"
+                            },
+                            {
+                                "PP": "13193",
+                                "PTB": "5852",
+                                "PSB": "15170",
+                                "PL": "6264",                                
+                                "category": "Abr - 21"
+                            },
+                            {
+                                "PP": "13391",
+                                "PTB": "6168",
+                                "PSB": "15206",
+                                "PL": "6359",                                
+                                "category": "Mai - 21"
+                            },
+                            {
+                                "PP": "13564",
+                                "PTB": "6510",
+                                "PSB": "15419",
+                                "PL": "6603",                                
+                                "category": "Jun - 21"
+                            },
+                            {
+                                "PP": "13668",
+                                "PTB": "6757",
+                                "PSB": "18605",
+                                "PL": "6741",
+                                "LIBER": "1946",
+                                "category": "Jul - 21"
+                            },
+                            {
+                                "PP": "13832",
+                                "PTB": "7222",
+                                "PSB": "18831",
+                                "PL": "6864",
+                                "LIBER": "1974",
+                                "category": "Ago - 21"
+                            }
+                        ]
+                    }
+                );
+            </script>
+            <p>Observação: Não apoiamos nenhum partido político.</p>   
+        </section>      
+        <!-- Contact-->
+        <section class="contact-section bg-black">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Sede</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">São Carlos</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-envelope text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Email</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50"><a href="#!">sementedaliberdade.sc@gmail.com</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Instagram</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">@sementedaliberdade</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social d-flex justify-content-center">
+                    <a class="mx-2" href="https://www.instagram.com/sementedaliberdade/"><i class="fab fa-instagram"></i></a>
+                    <a class="mx-2" href="https://www.facebook.com/sedli.sc"><i class="fab fa-facebook-f"></i></a>
+                    <a class="mx-2" href="https://www.linkedin.com/company/sedli-sc/"><i class="fab fa-linkedin"></i></a>
+                    <a class="mx-2" href="https://sementedaliberdade.medium.com/"><i class="fab fa-medium"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Semente da Liberdade 2021</div></footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="../js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+       
+    </body>
+</html>
