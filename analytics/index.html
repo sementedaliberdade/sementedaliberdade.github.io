@@ -884,6 +884,177 @@
                         </script>
                         <p></p> 
                 </div>
+		<!-- Institutos-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div id="chartdiv5" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>                    
+                        <!-- amCharts javascript code -->
+                        <script type="text/javascript">
+                            AmCharts.makeChart("chartdiv5",
+                                {
+                                    "type": "serial",
+                                    "categoryField": "category",
+                                    "startDuration": 1,
+                                    "theme": "default",
+                                    "categoryAxis": {
+                                        "gridPosition": "start"
+                                    },
+                                    "trendLines": [],
+                                    "graphs": [                                        
+                                        {
+                                            "accessibleLabel": "Expresso Libertário",                                            
+                                            "bullet": "round",
+                                            "id": "AmGraph-1",
+                                            "title": "Expresso Libertário",
+                                            "type": "smoothedLine",
+                                            "valueField": "Expresso Libertário"
+                                        },
+                                        {
+                                            "accessibleLabel": "Clube Caiapós",                                            
+                                            "bullet": "round",
+                                            "id": "AmGraph-2",
+                                            "title": "Clube Caiapós",
+                                            "type": "smoothedLine",
+                                            "valueField": "Clube Caiapós"
+                                        },
+                                        {
+                                            "id": "AmGraph-3",
+                                            "bullet": "round",
+                                            "title": "USP Liberal",
+                                            "type": "smoothedLine",
+                                            "valueField": "USP Liberal"
+                                        },                                        
+                                        {
+                                            "id": "AmGraph-4",
+                                            "bullet": "round",
+                                            "title": "Semente da Liberdade",
+                                            "type": "smoothedLine",
+                                            "valueField": "Semente da Liberdade"
+                                        },
+                                        {
+                                            "id": "AmGraph-5",
+                                            "bullet": "round",
+                                            "title": "Damas de Ferro",
+                                            "type": "smoothedLine",
+                                            "valueField": "Damas de Ferro"
+                                        },
+                                    ],
+                                    "guides": [],
+                                    "valueAxes": [
+                                        {
+                                            "id": "ValueAxis-1",
+                                            "title": "Seguidores"
+                                        }
+                                    ],
+                                    "allLabels": [],
+                                    "balloon": {},
+                                    "legend": {
+                                        "enabled": true,
+                                        "accessibleLabel": "Seguidores",
+                                        "rollOverGraphAlpha": 0,
+                                        "useGraphSettings": true
+                                    },
+                                    "titles": [
+                                        {
+                                            "id": "Title-1",
+                                            "size": 15,
+                                            "text": "Grupos Estudantis"
+                                        }
+                                    ],
+                                    "dataProvider": [
+                                        {
+                                            "Expresso Libertário": "1845",                                            
+                                            "category": "Nov - 20"
+                                        },
+                                        {
+                                            "Expresso Libertário": "1960",                                           
+                                            "category": "Dez - 20"
+                                        },
+                                        {
+                                            "Expresso Libertário": "2079",
+                                            "Clube Caiapós": "1470",                                            
+                                            "USP Liberal": "1602",
+                                            "Semente da Liberdade": "422",
+                                            "Damas de Ferro": "587",
+                                            "category": "Jan - 21"
+                                        },
+                                        {
+                                            "Expresso Libertário": "2113",
+                                            "Clube Caiapós": "1550",                                            
+                                            "USP Liberal": "1605",
+                                            "Semente da Liberdade": "519",
+                                            "Damas de Ferro": "642",
+                                            "category": "Fev - 21"
+                                        },
+                                        {
+                                            "Expresso Libertário": "2184",
+                                            "Clube Caiapós": "1630",                                            
+                                            "USP Liberal": "1609",
+                                            "Semente da Liberdade": "617",
+                                            "Damas de Ferro": "661",
+                                            "category": "Mar - 21"
+                                        },
+                                        {
+                                            "Expresso Libertário": "2259",
+                                            "Clube Caiapós": "1710",                                            
+                                            "USP Liberal": "1612",
+                                            "Semente da Liberdade": "715",
+                                            "Damas de Ferro": "698",
+                                            "category": "Abr - 21"
+                                        },
+                                        {
+                                            "Expresso Libertário": "2568",
+                                            "Clube Caiapós": "1791",                                            
+                                            "USP Liberal": "1616",
+                                            "Semente da Liberdade": "813",
+                                            "Damas de Ferro": "736",
+                                            "category": "Mai - 21"
+                                        },
+                                        {
+                                            "Expresso Libertário": "2600",
+                                            "Clube Caiapós": "1843",                                            
+                                            "USP Liberal": "1677",
+                                            "Semente da Liberdade": "989",
+                                            "Damas de Ferro": "801",
+                                            "category": "Jun - 21"
+                                        },
+                                        {
+                                            "Expresso Libertário": "2689",
+                                            "Clube Caiapós": "1896",                                            
+                                            "USP Liberal": "1739",
+                                            "Semente da Liberdade": "1117",
+                                            "Damas de Ferro": "845",
+                                            "category": "Jul - 21"
+                                        },
+                                        {
+                                            "Expresso Libertário": "2781",
+                                            "Clube Caiapós": "2044",                                            
+                                            "USP Liberal": "1804",
+                                            "Semente da Liberdade": "1165",
+                                            "Damas de Ferro": "866",
+                                            "category": "Ago - 21"
+                                        },
+                                        {
+                                            "Expresso Libertário": "3058",
+                                            "Clube Caiapós": "2261",                                            
+                                            "USP Liberal": "1808",
+                                            "Semente da Liberdade": "1632",
+                                            "Damas de Ferro": "939",
+                                            "category": "Set - 21"
+                                        },  
+					 {
+                                            "Expresso Libertário": "3058",
+                                            "Clube Caiapós": "2447",                                            
+                                            "USP Liberal": "1808",
+                                            "Semente da Liberdade": "1889",
+                                            "Damas de Ferro": "977",
+                                            "category": "Out - 21"
+                                        },   
+                                    ]
+                                }
+                            );
+                        </script>
+                        <p></p> 
+                </div>
                 <!-- Partidos-->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
                     <div id="chartdiv6" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>                    
