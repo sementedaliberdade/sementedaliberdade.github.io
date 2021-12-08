@@ -1211,7 +1211,87 @@
                                     </script>
                                     <p></p> 
                             </div>
-                <!-- Partidos-->
+                <!-- Políticos-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div id="chartdiv14" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>                    
+                    <!-- amCharts javascript code -->
+                    <script type="text/javascript">
+                        AmCharts.makeChart("chartdiv14",
+                            {
+                                "type": "serial",
+                                "categoryField": "category",
+                                "startDuration": 1,
+                                "theme": "default",
+                                "categoryAxis": {
+                                    "gridPosition": "start"
+                                },
+                                "trendLines": [],
+                                "graphs": [
+                                    {
+                                        "id": "AmGraph-1",
+                                        "bullet": "round",
+                                        "title": "Bolsonaro",
+                                        "type": "smoothedLine",
+                                        "valueField": "Bolsonaro"
+                                    },
+                                    {
+                                        "id": "AmGraph-2",
+                                        "bullet": "round",
+                                        "title": "Lula",
+                                        "type": "smoothedLine",
+                                        "valueField": "Lula"
+                                    },
+                                    {
+                                        "accessibleLabel": "PT",                                       
+                                        "bullet": "round",
+                                        "id": "AmGraph-3",
+                                        "title": "Moro",
+                                        "type": "smoothedLine",
+                                        "valueField": "Moro"
+                                    },                                                                                                  
+                                ],
+                                "guides": [],
+                                "valueAxes": [
+                                    {
+                                        "id": "ValueAxis-1",
+                                        "title": "Seguidores"
+                                    }
+                                ],
+                                "allLabels": [],
+                                "balloon": {},
+                                "legend": {
+                                    "enabled": true,
+                                    "accessibleLabel": "Seguidores",
+                                    "rollOverGraphAlpha": 0,
+                                    "useGraphSettings": true
+                                },
+                                "titles": [
+                                    {
+                                        "id": "Title-1",
+                                        "size": 15,
+                                        "text": "Políticos"
+                                    }
+                                ],
+                                "dataProvider": [                                  
+				    {
+                                        "Bolsonaro": "18979763",
+                                        "Lula": "3426272",
+                                        "Moro": "2552638", 
+                                        "category": "Nov"
+                                    },
+				    {
+                                        "Bolsonaro": "19045369",
+                                        "Lula": "3700504",
+                                        "Moro": "2557201",                                      
+                                        "category": "Dez"
+                                    },
+                                ]
+                            }
+                        );
+                    </script>
+                    <p>Observação: Não apoiamos nenhum partido político.</p> 
+		    
+		<!-- Partidos-->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
                     <div id="chartdiv7" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>                    
                     <!-- amCharts javascript code -->
