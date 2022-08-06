@@ -1950,6 +1950,107 @@
                 );
             </script>
             <p>Observação: Não apoiamos nenhum partido político.</p>   
+		 
+	<!-- 5k a 15k-->
+         <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+            <div id="chartdiv22" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>                    
+            <!-- amCharts javascript code -->
+            <script type="text/javascript">
+                AmCharts.makeChart("chartdiv22",
+                    {
+                        "type": "serial",
+                        "categoryField": "category",
+                        "startDuration": 1,
+                        "theme": "default",
+                        "categoryAxis": {
+                            "gridPosition": "start"
+                        },
+                        "trendLines": [],
+                        "graphs": [                                                        
+                            {
+                                "id": "AmGraph-1",
+                                "bullet": "round",
+                                "title": "Tapa",
+                                "type": "smoothedLine",
+                                "valueField": "Tapa"
+                            },
+                            {
+                                "id": "AmGraph-2",
+                                "bullet": "round",
+                                "title": "PP",
+                                "type": "smoothedLine",
+                                "valueField": "PP"
+                            },
+                            {                            
+                                "bullet": "round",
+                                "id": "AmGraph-3",
+                                "title": "PTB",
+                                "type": "smoothedLine",
+                                "valueField": "PTB"
+                            },            
+                            {                             
+                                "bullet": "round",
+                                "id": "AmGraph-4",
+                                "title": "PL",
+                                "type": "smoothedLine",
+                                "valueField": "PL"
+                            },
+			     {
+                                "id": "AmGraph-5",
+                                "bullet": "round",
+                                "title": "Liber PR",
+                                "type": "smoothedLine",
+                                "valueField": "Liber PR"
+                            },
+                            {
+                                "id": "AmGraph-6",
+                                "bullet": "round",
+                                "title": "LIBER",
+                                "type": "smoothedLine",
+                                "valueField": "LIBER"
+                            },                        
+                        ],
+                        "guides": [],
+                        "valueAxes": [
+                            {
+                                "id": "ValueAxis-1",
+                                "title": "Seguidores"
+                            }
+                        ],
+                        "allLabels": [],
+                        "balloon": {},
+                        "legend": {
+                            "enabled": true,
+                            "accessibleLabel": "Seguidores",
+                            "rollOverGraphAlpha": 0,
+                            "useGraphSettings": true
+                        },
+                        "titles": [
+                            {
+                                "id": "Title-1",
+                                "size": 15,
+                                "text": "Partidos"
+                            }
+                        ],
+                        "dataProvider": [                            
+			    {
+                                "PP": "14708",
+                                "PTB": "9586",
+                                "PSB": "20448",
+                                "PL": "14170",
+				"Liber PR":"4653",
+                                "LIBER": "2184",
+                                "category": "Dez - 21"
+                            },
+                        ]
+                    }
+                );
+            </script>	 
+		 
+		 
+		 
+		 
+		 
         </section>      
         <!-- Contact-->
         <section class="contact-section bg-black">
